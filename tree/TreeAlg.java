@@ -18,6 +18,13 @@ public class TreeAlg {
 		TreeAlg.minOrder(root);
 	}
 
+	public TreeNode getTreeExample(){
+		String first = "abdegcfh";
+		String mid = "dbgeafhc";
+		//TreeAlg  treeAlg = new TreeAlg();
+		TreeNode root = TreeAlg.buildTree(first, 0, first.length()-1, mid, 0, mid.length()-1);
+		return root;
+	}
 	
 	/**
 	 * 根据先根、中根遍历构建二叉树
@@ -65,12 +72,12 @@ public class TreeAlg {
 		minOrder(root.right);
 	}
 }
-class TreeNode {
-	TreeNode left,right;
-	int  val;
-	TreeNode(){
-		left = right = null;
-		val = -1;
-	}
-	
-}
+//class TreeNode {
+//	TreeNode left,right;
+//	int  val;
+//	TreeNode(){
+//		left = right = null;
+//		val = -1;
+//	}
+//	
+//}
